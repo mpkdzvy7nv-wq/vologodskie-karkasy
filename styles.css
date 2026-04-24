@@ -232,3 +232,18 @@ p{line-height:1.62}
 .variant-option,.mini-cta,.details-toggle{cursor:pointer}
 @keyframes detailsFade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 @media(max-width:640px){.details-grid{grid-template-columns:1fr}.details-inner{padding:14px}.details-toggle{font-size:13px}}
+
+/* v6: каталог-выставка без лишних лендинговых блоков */
+.catalog-showcase{padding:64px 0 52px}
+.catalog-showcase .section-head{max-width:960px}
+.catalog-showcase h1{font-size:clamp(42px,5vw,70px);line-height:.98;letter-spacing:-.065em;margin:18px auto 18px}
+.product-card[data-category="Грядки"] .product-visual:before{height:46px;left:42px;right:42px;bottom:44px;border-radius:14px;transform:skew(-7deg)}
+.product-card[data-category="Комплектующие"] .product-visual:before{height:58px;left:56px;right:56px;border-radius:20px;bottom:42px}
+.product-card[data-category="Скамейки и лавочки"] .product-visual:before{height:48px;left:42px;right:42px;bottom:58px;border-radius:12px;border-top-width:5px}
+.product-card[data-category="Скамейки и лавочки"] .product-visual:after{height:80px}
+.product-card[data-category="Козырьки"] .product-visual:before{height:62px;left:44px;right:44px;bottom:52px;border-radius:70px 70px 12px 12px;transform:rotate(-3deg)}
+.product-card[data-category="Комплектующие"] .product-visual,
+.product-card[data-category="Козырьки"] .product-visual,
+.product-card[data-category="Скамейки и лавочки"] .product-visual,
+.product-card[data-category="Грядки"] .product-visual{background:linear-gradient(135deg,#f0f6e5,#fff 55%,#e8dccb)}
+@media(max-width:640px){.catalog-showcase{padding:38px 0 42px}.catalog-showcase h1{font-size:39px}.catalog-showcase .section-head p{font-size:16px}}
