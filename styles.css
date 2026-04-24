@@ -254,7 +254,6 @@ p{line-height:1.62}
 .product-visual:before,.product-visual:after{display:none !important;}
 .product-visual img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;}
 .product-visual .badge,.product-visual .type-badge{position:absolute;z-index:2;}
-.product-visual:has(img)::after{display:block !important;content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.04) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,.14) 100%);}
 .product-content{gap:12px;}
 .product-lead{margin:0;color:#4f5d50;font-size:14px;line-height:1.45;}
 @media (max-width:760px){.product-visual{height:190px;}}
@@ -262,3 +261,14 @@ p{line-height:1.62}
 /* v8 source notes */
 .price-note{display:block!important;margin-top:3px;color:#7a846f!important;text-decoration:none!important;font-size:11px!important;font-weight:750!important;line-height:1.25!important;}
 .product-lead{min-height:40px;}
+
+
+/* final photo-card fixes */
+.product-visual{height:220px;position:relative;overflow:hidden;background:linear-gradient(135deg,#edf6dd,#fff 55%,#eadcc8);}
+.product-visual.has-photo{background:#eef2e7;}
+.product-visual.has-photo:before,.product-visual.has-photo:after{display:none !important;}
+.product-visual img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;}
+.product-visual .badge,.product-visual .type-badge{position:absolute;z-index:3;}
+.product-lead{margin:0;color:#4f5d50;font-size:14px;line-height:1.45;}
+.details-grid:empty{display:none;}
+@media (max-width:760px){.product-visual{height:190px;}}
