@@ -258,3 +258,7 @@ p{line-height:1.62}
 .product-content{gap:12px;}
 .product-lead{margin:0;color:#4f5d50;font-size:14px;line-height:1.45;}
 @media (max-width:760px){.product-visual{height:190px;}}
+
+/* v8 source notes */
+.price-note{display:block!important;margin-top:3px;color:#7a846f!important;text-decoration:none!important;font-size:11px!important;font-weight:750!important;line-height:1.25!important;}
+.product-lead{min-height:40px;}
