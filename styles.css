@@ -247,3 +247,14 @@ p{line-height:1.62}
 .product-card[data-category="Скамейки и лавочки"] .product-visual,
 .product-card[data-category="Грядки"] .product-visual{background:linear-gradient(135deg,#f0f6e5,#fff 55%,#e8dccb)}
 @media(max-width:640px){.catalog-showcase{padding:38px 0 42px}.catalog-showcase h1{font-size:39px}.catalog-showcase .section-head p{font-size:16px}}
+
+
+/* v7 photo cards */
+.product-visual{height:220px;position:relative;overflow:hidden;background:#f3f5ef;}
+.product-visual:before,.product-visual:after{display:none !important;}
+.product-visual img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;}
+.product-visual .badge,.product-visual .type-badge{position:absolute;z-index:2;}
+.product-visual:has(img)::after{display:block !important;content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.04) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,.14) 100%);}
+.product-content{gap:12px;}
+.product-lead{margin:0;color:#4f5d50;font-size:14px;line-height:1.45;}
+@media (max-width:760px){.product-visual{height:190px;}}
