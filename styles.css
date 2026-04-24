@@ -272,3 +272,12 @@ p{line-height:1.62}
 .product-lead{margin:0;color:#4f5d50;font-size:14px;line-height:1.45;}
 .details-grid:empty{display:none;}
 @media (max-width:760px){.product-visual{height:190px;}}
+
+
+/* v10 reliable photo cards */
+.product-visual{height:230px;background-color:#eef4e8;background-size:cover !important;background-position:center !important;background-repeat:no-repeat !important;}
+.product-visual.has-photo:before{display:none !important;}
+.product-visual.has-photo:after{display:block !important;content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,0) 45%,rgba(0,0,0,.16));z-index:1;}
+.product-visual .badge,.product-visual .type-badge{z-index:3;}
+.product-lead{margin:0;color:#506050;font-size:14px;line-height:1.45;}
+@media (max-width:760px){.product-visual{height:190px;}}
